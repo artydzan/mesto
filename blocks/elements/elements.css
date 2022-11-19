@@ -1,0 +1,9 @@
+.elements {
+  margin: 47px 0 0 0;
+}
+
+@media screen and (max-width: 410px) {
+  .elements {
+    margin: 35px 0 0 0;
+  }
+  }

@@ -1,0 +1,19 @@
+.popup {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.5);
+  bottom: 33px;
+  left: 0;
+}
+
+@media screen and (max-width: 410px) {
+  .popup {
+    width: 88%;
+    margin: -108px 19px 0px 19px;
+    bottom: 108px;
+  }
+  }
