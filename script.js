@@ -4,13 +4,13 @@ let editButton = document.querySelector('.profile__edit-button');
 let closeButton = document.querySelector('.popup__close-icon');
 let popup = document.querySelector('.popup');
 function popupOpen() {
-  popup.classList.add('popup__opened')
-  nameInput.value = name.textContent
-  aboutInput.value = desctiption.textContent
+  popup.classList.add('popup__opened');
+  nameInput.value = name.textContent;
+  aboutInput.value = desctiption.textContent;
 }
 
 function popupClose() {
-  popup.classList.remove('popup__opened')
+  popup.classList.remove('popup__opened');
 }
 
 editButton.addEventListener('click', popupOpen);
@@ -21,10 +21,10 @@ let nameInput = formElement.querySelector('.field__item_name');
 let aboutInput = formElement.querySelector('.field__item_about');
 
 function formSubmitHandler(evt) {
-  evt.preventDefault()
-  name.textContent = nameInput.value
-  desctiption.textContent = aboutInput.value
-  popupClose()
+  evt.preventDefault();
+  name.textContent = nameInput.value;
+  desctiption.textContent = aboutInput.value;
+  popupClose();
 }
 
-formElement.addEventListener('submit', formSubmitHandler)
+formElement.addEventListener('submit', formSubmitHandler);

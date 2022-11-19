@@ -3,12 +3,12 @@
   height: 33px;
   margin-left: 0;
   margin-top: 0;
-  transition: opacity .2s linear;
+  transition: opacity 0.2s linear;
   width: 142px;
 }
 
 .header__logo:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 941px) {

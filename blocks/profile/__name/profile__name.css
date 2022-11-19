@@ -12,12 +12,12 @@
 }
 
 @media screen and (max-width: 610px) {
-.profile__name {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 27px;
-  line-height: 33px;
-}
+  .profile__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 33px;
+  }
 }
 
 @media screen and (max-width: 410px) {
@@ -25,4 +25,4 @@
     margin-top: 22px;
     margin-left: 39px;
   }
-  }
+}

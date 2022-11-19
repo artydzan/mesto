@@ -10,8 +10,8 @@
   padding: 0;
   margin: 0px 0px 5px 0px;
   border-radius: 2px;
-  border: 1px solid #FFFFFF;
-  transition: .1s;
+  border: 1px solid #ffffff;
+  transition: 0.1s;
 }
 
 @media screen and (max-width: 710px) {
@@ -19,13 +19,13 @@
     width: 88%;
     margin: 0;
   }
-  }
+}
 
 @media screen and (max-width: 410px) {
   .profile__add-button {
     background-size: 16px;
   }
-  }
+}
 .profile__add-button:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
