@@ -4,8 +4,8 @@ let editButton = document.querySelector('.profile__edit-button');
 let closeButton = document.querySelector('.popup__close-icon');
 let popup = document.querySelector('.popup');
 let formElement = document.querySelector('.form');
-let nameInput = formElement.querySelector('.field__item-name_disabled');
-let aboutInput = formElement.querySelector('.field__item-description_disabled');
+let nameInput = formElement.querySelector('.field__item_value_name');
+let aboutInput = formElement.querySelector('.field__item_value_description');
 function popupOpen() {
   popup.classList.add('popup__opened');
   nameInput.value = name.textContent;
