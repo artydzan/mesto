@@ -24,5 +24,6 @@
   .profile__name {
     margin-top: 22px;
     margin-left: 39px;
+    max-width: 200px;
   }
 }
