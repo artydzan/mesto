@@ -6,6 +6,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 830px) {
+  .header {
+    margin-left: 27px;
+  }
+}
+
 @media screen and (max-width: 653px) {
   .header {
     margin-top: 28px;

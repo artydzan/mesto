@@ -9,120 +9,112 @@
   <body class="root">
     <div class="page">
       <header class="header">
-        <img class="header__logo" src="./images/Logo.svg" alt="Mesto логотип">
+        <img class="logo" src="./images/Logo.svg" alt="Логотип__Место">
       </header>
-      <main class="main">
+      <main id="main" class="main">
         <section class="profile">
-            <img
-              class="profile__avatar"
-              src="./images/profile_avatar.jpg"
-              alt="Фото пользователя"
-            >
+          <img
+            class="profile__avatar"
+            src="./images/profile_avatar.jpg"
+            alt="фото__профиля"
+          />
           <div class="profile__info">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button class="profile__edit-button"></button>
+            <button
+              id="editButton"
+              type="button"
+              class="profile__edit-button"
+              name="profile"
+            ></button>
             <p class="profile__description">Исследователь океана</p>
           </div>
-          <button class="profile__add-button"></button>
+          <button
+            id="addButton"
+            type="button"
+            class="profile__add-button"
+            name="profile"
+          ></button>
         </section>
         <section class="elements">
-          <ul class="elements__list">
-            <li class="element">
-              <img
-                class="element__mask"
-                src="./images/kirill-pershin-1088404-unsplash.jpg"
-                alt="Церковь"
-              >
-              <div class="element__container">
-                <h2 class="element__title">Карачаевск</h2>
-                <button class="element__like"></button>
-              </div>
-            </li>
-            <li class="element">
-              <img
-                class="element__mask"
-                src="./images/kirill-pershin-elbrus.jpg"
-                alt="Эльбрус"
-              >
-              <div class="element__container">
-                <h2 class="element__title">Гора Эльбрус</h2>
-                <button class="element__like"></button>
-              </div>
-            </li>
-            <li class="element">
-              <img
-                class="element__mask"
-                src="./images/kirill-pershin-dombai.jpg"
-                alt="Домбай"
-              >
-              <div class="element__container">
-                <h2 class="element__title">Домбай</h2>
-                <button class="element__like"></button>
-              </div>
-            </li>
-            <li class="element">
-              <img
-                class="element__mask"
-                src="./images/kirill-pershin-elbrus.jpg"
-                alt="Эльбрус"
-              >
-              <div class="element__container">
-                <h2 class="element__title">Гора Эльбрус</h2>
-                <button class="element__like"></button>
-              </div>
-            </li>
-            <li class="element">
-              <img
-                class="element__mask"
-                src="./images/kirill-pershin-dombai.jpg"
-                alt="Домбай"
-              >
-              <div class="element__container">
-                <h2 class="element__title">Домбай</h2>
-                <button class="element__like"></button>
-              </div>
-            </li>
-            <li class="element">
-              <img
-                class="element__mask"
-                src="./images/kirill-pershin-1088404-unsplash.jpg"
-                alt="Церковь"
-              >
-              <div class="element__container">
-                <h2 class="element__title">Карачаево-Черкесия</h2>
-                <button class="element__like"></button>
-              </div>
-            </li>
-          </ul>
+          <ul class="elements__list"></ul>
         </section>
       </main>
       <footer class="footer">
-        <p class="footer__copyright">© 2020 Mesto Russia</p>
+        <p class="footer__copyright">© 2022 Mesto Russia</p>
       </footer>
-      <div class="popup">
+      <div class="popup popup_edit">
         <div class="popup__container">
           <button type="button" class="popup__close-icon"></button>
           <h3 class="popup__text">Редактировать профиль</h3>
-          <form class="form">
+          <form class="form form_edit" action="URL" name="editForm">
             <fieldset class="field">
               <input
                 type="text"
                 class="field__item field__item_value_name"
                 name="name"
+                value=""
                 placeholder="Имя"
-              >
+              />
               <input
                 type="text"
                 class="field__item field__item_value_description"
-                name="about"
+                name="profession"
+                value=""
                 placeholder="О себе"
-              >
+              />
             </fieldset>
-            <button class="form__button">Сохранить</button>
+            <button type="submit" class="form__button" value="">
+              Сохранить
+            </button>
           </form>
         </div>
       </div>
+      <div class="popup popup_add">
+        <div class="popup__container">
+          <button type="button" class="popup__close-icon"></button>
+          <h3 class="popup__text">Новое место</h3>
+          <form class="form form_add" action="URL" name="addForm">
+            <fieldset class="field">
+              <input
+                type="text"
+                class="field__item field__item_value_title"
+                name="name"
+                value=""
+                placeholder="Название"
+              />
+              <input
+                type="url"
+                class="field__item field__item_value_url"
+                name="url"
+                value=""
+                placeholder="Ссылка на картинку"
+              />
+            </fieldset>
+            <button type="submit" class="form__button" value="">
+              Сохранить
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="popup popup__bigimg">
+        <div class="popup__img">
+          <button type="button" class="popup__close-icon"></button>
+          <img class="popup__image" src="#" alt="" />
+          <h3 class="popup__title"></h3>
+        </div>
+      </div>
+      <template id="elements-card">
+        <li class="element">
+          <button class="element__trash" type="button"></button>
+          <img class="element__pic" />
+          <div class="element__container">
+            <h2 class="element__title"></h2>
+            <button type="button" class="element__like"></button>
+          </div>
+        </li>
+      </template>
     </div>
+    <script src="./scripts/const.js"></script>
     <script src="./scripts/index.js"></script>
   </body>
 </html>

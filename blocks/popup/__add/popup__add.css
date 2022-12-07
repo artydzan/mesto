@@ -1,4 +1,4 @@
-.popup__container {
+.popup__edit {
   position: relative;
   box-sizing: border-box;
   background: #ffffff;
@@ -13,13 +13,10 @@
 }
 
 @media screen and (max-width: 410px) {
-  .popup__container {
+  .popup__edit {
     margin-left: 19px;
     margin-right: 19px;
     padding-left: 3px;
     padding-right: 3px;
-    width: 88%;
-    bottom: 193px;
-    left: 8px;
   }
 }
